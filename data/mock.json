@@ -18,7 +18,7 @@
     },
     {
         "id": 3,
-        "name": "Ram 1500 Club",
+        "name": "1500 Club",
         "model": "Dodge",
         "image": "images/3.jpg",
         "city": "san jose",
@@ -58,7 +58,7 @@
     },
     {
         "id": 8,
-        "name": "RL",
+        "name": "Volvo",
         "model": "Acura",
         "image": "images/8.jpg",
         "city": "foster city",
