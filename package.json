@@ -1,7 +1,7 @@
 {
   "name": "carsrental",
   "version": "1.0.0",
-  "description": "car rental application",
+  "description": "Enterprise car rental application",
   "main": "index.js",
   "scripts": {
     "test": "npm test"
