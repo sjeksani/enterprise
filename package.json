@@ -1,0 +1,15 @@
+{
+  "name": "carsrental",
+  "version": "1.0.0",
+  "description": "car rental application",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "SJ",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "gulp": "^3.9.1"
+  }
+}

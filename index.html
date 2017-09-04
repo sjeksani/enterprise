@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-app="carRentalModule">
+
+<head>
+    <title>Rental Cars at Low, Affordable Rates- Enterprise-rent-a-car</title>
+    <script src="angularjs/angular.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body ng-controller="carRentalController as control">
+    <div class="upper-Menu">
+        <div class="primary-nav-label">
+            <img src="images/enterprise.png" width="150px;">
+        </div>
+        <div class="sub">
+            <div class="primary-nav-label">
+                <a href="">Careers</a>
+            </div>
+            <div class="primary-nav-label">
+                <a href="">Help</a>
+            </div>
+            <div class="primary-nav-label">
+                <a href="">SIGNIN</a>
+            </div>
+            <div class="primary-nav-label">
+                <a href="">JOIN</a>
+            </div>
+        </div>
+    </div>
+    <div class="main-Menu">
+        <div class="primary-nav-label">
+            <a href="http://www.google.com">Rent</a>
+        </div>
+        <div class="primary-nav-label">
+            <a href="">Buy</a>
+        </div>
+        <div class="primary-nav-label">
+            <a href="">Share</a> </div>
+        <div class="primary-nav-label">
+            <a href="">Learn</a></div>
+        <div class="primary-nav-label w3-col s3">
+            <a href="">Locations</a></div>
+        <div class="primary-nav-label">
+            <a href="">For Business</a>
+        </div>
+    </div>
+    <div class="user-form">
+        <div class="nav-reservation">
+            <h2>START A RESERVATION</h2>
+        </div>
+        <div class="nav-reservation">
+            <a href="">VIEW / MODIFY / CANCEL</a>
+        </div>
+        <div>
+            <h4>LOCATION <span style="color: grey; font-size: 13px;">(ZIP, City or Airport)</span> </h4>
+            <!-- <input class="input" type="text" name="location"> -->
+            <input name="location" id="location" type="text" placeholder="enter a location" ng-model="search.name">
+        </div>
+    </div>
+    <div ng-repeat="v in control.dataObj | filter:search:name">
+        <h3>{{v.name}}</h3>
+        <img class="carimages" src="{{v.image}}" width="400px" height="300px">
+    </div>
+</body>
+
+</html>
